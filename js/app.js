@@ -71,7 +71,7 @@ navBarCreation();
 function setActive(){
     sections.forEach(section => {
         const frame = section.getBoundingClientRect();
-        if(frame.top >= 0 && frame.left >= 0 && frame.bottom <= (window.innerHeight || document.documentElement.clientHeight) && frame.right <= (window.innerWidth || document.documentElement.clientWidth)){
+        if(frame.top >= 0 && frame.left >= 0 && frame.bottom-300 <= (window.innerHeight || document.documentElement.clientHeight) && frame.right <= (window.innerWidth || document.documentElement.clientWidth)){
                 if(!section.classList.contains('your-active-class')){
                     section.classList.add('your-active-class')
                 }
