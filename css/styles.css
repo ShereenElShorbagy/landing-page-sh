@@ -8,6 +8,10 @@
  *
 */
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 /* ---- Base Rules ---- */
 body {
@@ -61,6 +65,26 @@ section {
     min-height: 80vh;
 }
 
+.scroll__to__top{
+    position: fixed;
+    right: 50%;
+    bottom: -25%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    z-index: 9;
+    visibility: hidden;
+    align-items: center;
+    transition: 0.6s;
+    cursor: pointer;
+    background-color: rgb(40, 228, 187);
+}
+
+.show-button{
+    visibility: visible;
+    bottom: 1.8rem;
+}
 
 /* ---- Module Rules ---- */
 

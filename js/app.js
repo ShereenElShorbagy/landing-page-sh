@@ -86,6 +86,23 @@ function setActive(){
 document.addEventListener('scroll', setActive);
 
 
+//Function scrollToTop that makes the scroll to top button appear when we scroll down a little bit and when it is clicked then it redirects us to the top of the page.
+function scrollToTop(){
+    const topButton = document.getElementById('scroll-to-top');
+    topButton.addEventListener('click', function backToTop(){
+        document.body.scrollTop = 0;
+    })
+    if(this.scrollY >= 800){
+        topButton.classList.add('show-button');
+    }
+    else{
+        topButton.classList.remove('show-button');
+    }
+}
+
+window.addEventListener('scroll', scrollToTop);
+
+
 // Scroll to anchor ID using scrollTO event
 
 
